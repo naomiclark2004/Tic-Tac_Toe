@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Open+Sans:wght@600&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/Javascript" src="script.js"></script>
+</head>
+<body onload="startGame()">
+    <div class="header">
+        <h1>TIC-TAC-TOE</h1>
+        <p id="message"></p>
+    </div>
+    <div class="section">
+        <div id="player">Player: </div>
+        <div id="turn">Turn: </div>
+    </div>
+    <div class="container">
+        <div id ="s1" class="tl square" onclick="nextMove(this)"></div>
+        <div id ="s2" class="tm square" onclick="nextMove(this)"></div>
+        <div id ="s3" class="tr square" onclick="nextMove(this)"></div>
+        <div id ="s4" class="lm square" onclick="nextMove(this)"></div>
+        <div id ="s5" class="mm square" onclick="nextMove(this)"></div>
+        <div id ="s6" class="mr square" onclick="nextMove(this)"></div>
+        <div id ="s7" class="bl square" onclick="nextMove(this)"></div>
+        <div id ="s8" class="bm square" onclick="nextMove(this)"></div>
+        <div id ="s9" class="br square" onclick="nextMove(this)"></div>
+    </div>
+    <div class="scoreboard">
+        <h2 id="win">Wins</h2>
+        <p id="xWins">X  -  </p>
+        <p id="xScore">- 0</p>
+        <p id="oScore">- 0</p>
+        <p id="oWins">O  -  </p>
+    </div>
+    <div class="button">
+        <button type="button" id="newGame" onclick="resetGame()">New Game</button>
+        <button type="button" id="reset" onclick="reload()">Reload</button>
+    </div>
+</body>
+</html>
